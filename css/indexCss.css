@@ -1,0 +1,256 @@
+body{
+	/* 设置背景图片 并且水平展开 */
+	background: url(../img/bd-bg.png)  repeat-x;
+} 
+/* 设置div居中 */
+.w{
+	width: 940px;
+	margin: 0px auto;
+}
+/*解决高度塌陷问题clearfix*/
+.clearfix:after,.clearfix:before{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*兼容ie6高度塌陷*/
+.clearfix{
+    zoom: 1;
+}
+.top{
+	padding-top: 37px;
+	padding-bottom: 45px;
+}
+.top a{
+	/* 去掉超链接的下划线 */
+	text-decoration: none;
+	color: #666;
+	font: bold 14px Georgia;
+}
+/* 鼠标移动到超链接上 */
+.top a:hover{
+	color: #969899;
+}
+.top li{
+	float: left;
+	border-left: 1px #d6d6d6 dashed;
+	padding-left: 8px;
+	margin-right: 8px;
+	margin-top: 25px;
+}
+.top p{
+	font: 11px Tahoma;
+	color: #b7b7b7;
+	margin-bottom: 8px;
+}
+.top .ulDiv{
+	float: right;
+}
+
+/* 广告部分 */
+.ad{
+	height: 356px;
+	background:url(../img/banner-bg.png) no-repeat bottom center;
+	/* 开启定位 */
+	position: relative;
+}
+.adBtn{
+	/* 开启绝对定位 */
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+.adBtn a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-left: 4px;
+	background:url(../img/pointer.png) no-repeat;
+}
+.ad .activeBtn , .adBtn a:hover{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+
+/* 内容 */
+.content h1{
+	color: #000;
+	font: bold 24px Georgia;
+	/* 行内元素设置居中 */
+	text-align: center;
+	padding-bottom: 22px;
+	margin: 8px 0px 20px;
+	/* 设置背景图片 不重复 和 底部居中 */
+	background: url(../img/line.png) no-repeat bottom center;
+}
+.content .contentL , .content .contentC , .content .contentR{
+	/* background: plum; */
+	width: 32.5%;
+	float: left;
+}
+.content .contentC{
+	margin: 0 10px;
+}
+.content .contentImg{
+	text-align: center;
+	width: 299px;
+	height: 202px;
+	background: url(../img/img-bg.png) no-repeat;
+	padding-top: 12px;
+	
+}
+.content h2{
+	color: #11719e;
+	font: 21px Georgia;
+}
+.content .p1{
+	font: 12px Helvetica;
+}
+.content .p2{
+	height: 87px;
+	font: 13px Tahoma;
+	color: #3e3e3e;
+}
+.content a{
+	display: table;
+	background: url(../img/btn1.png) no-repeat;
+	width: 163px;
+	height: 32px;
+	text-decoration: none;
+	color: #3369b8;
+	font: 12px/40px Tahoma;
+	margin-top: 10px;
+	/* 设置文字首行缩进1个字符 */
+	text-indent: 1em;
+}
+.content a:hover{
+	text-decoration: underline;
+}
+/* 联系 */
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+	margin-top: 25px;
+	/* padding-top: 10xp; */
+}
+.contact .contactL , .contact .contactC , .contact .contactR{
+	float: left;
+	width: 32.5%;
+	margin-top: 40px;
+}
+.contact .contactC{
+	margin: 40px 10px 0px 10px;
+}
+
+.contact h3{
+	color: #444;
+	font: 18px/1 "georgia";
+	border-bottom: 1px dashed #d3d3d3;
+	padding-bottom: 8px;
+	margin-bottom: 12px;
+}
+
+.contact h4{
+	font: 18px/1 bold "gill sans mt";
+	border-bottom: 1px dashed #d3d3d3;
+	padding-bottom: 8px;
+	margin: 20px 0px 15px;	
+}
+
+.contact p{
+	color: #444;
+	font: 13px/1 "Tahoma";
+	margin-bottom: 13px;
+}
+
+.logoImg{
+	font-size: 0;
+	margin-bottom: 15px;
+}
+.logoImg img{
+	margin-right: 5px;
+}
+
+.ct{
+	width: 276px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/input.png) no-repeat;
+	border: none;
+	/*去除默认内边距*/
+	/*设置输入框的内边距，使输入的文字不会太贴近边框,但会导致输入框整体变宽20px，所以上方宽度减20px*/
+	padding: 0px 10px;
+}
+.contactBtn{
+	background: url(../img/btn2.png) no-repeat;
+	display: block;
+	width: 163px;
+	height: 32px;
+	border: none;
+	margin: 10px 0px 20px;
+	color: white;
+	font: 13px "Georgia";
+	text-align: left;
+	text-indent: 1em;
+}
+
+.cta{
+	background: url(../img/textarea.png) no-repeat;
+	border: none;
+	overflow: auto;
+	width: 276px;
+	height: 129px;
+	resize: none;
+	/*去除默认内边距*/
+	/*设置输入框的内边距，使输入的文字不会太贴近边框,但会导致输入框整体变宽20px，所以上方宽度减20px*/
+	padding: 5px 10px 0px 10px;
+	
+}
+.contactC .ct{
+	margin-bottom: 12px;
+}
+
+.contactR img{
+	float: left;
+	margin-right: 8px;
+}
+.contactR p{
+	height: 58px;
+	border-bottom: 1px dashed #d3d3d3;
+	padding-bottom: 10px;
+	margin-bottom:10px;
+	color: #444;
+	font: 12px/1 Tahoma;
+}
+
+/* 底部 */
+.bottom{
+	width: 100%;
+	height: 172px;
+	background-color: #333333;
+	border-top: 10px #4c4c4c solid;
+	color: #999;
+	font: 12px Tahoma;
+}
+.bottom .w{
+	margin-top: 12px;
+}
+.bottom p{
+	margin: 8px 26px 0px 10px;
+	
+}
+.bottom .copyright{
+	float: right;
+}
+.bottom .site{
+	/* 设置行内块元素 */
+	display: inline-block;
+}
+.bottom a{
+	/* 去掉超链接的下划线 */
+	text-decoration: none;
+	color: #999;
+}
+
+.bottom a:hover{
+	text-decoration: underline;
+	color: #d2dddd;
+}
